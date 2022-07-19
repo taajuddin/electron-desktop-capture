@@ -1,0 +1,38 @@
+{
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "Promise": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "keyword-spacing": [
+            "error"
+        ],
+        "comma-spacing": [
+            "error"
+        ],
+        "no-console": "off",
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ]
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "electron-desktop-screenshot",
+  "version": "1.0.10",
+  "description": "Cross-platform screenshot module, using external tools",
+  "license": "MIT",
+  "author": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:senzil/node-desktop-screenshot"
+  },
+  "dependencies": {
+    "jimp": "0.2.x",
+    "tmp": "0.0.33"
+  },
+  "main": "module.js",
+  "scripts": {
+    "test": "mocha --full-trace",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint && npm run test",
+    "release": "npm version --no-git-tag-version --preid=release prerelease && git add ."
+  },
+  "pre-commit": [
+    "release"
+  ],
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "del": "^3.0.0",
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2"
+  },
+  "keywords": [
+    "screenshot",
+    "snatshot",
+    "desktop",
+    "scrot",
+    "nircmd",
+    "crop",
+    "rezise"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "x86",
+    "arm"
+  ]
+}
