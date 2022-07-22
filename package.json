@@ -1,12 +1,12 @@
 {
   "name": "electron-desktop-screenshot",
-  "version": "1.0.10",
+  "version": "1.0.11-release.0",
   "description": "Cross-platform screenshot module, using external tools",
   "license": "MIT",
   "author": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:senzil/node-desktop-screenshot"
+    "url": "git@github.com:taajuddin/electron-desktop-screenshot"
   },
   "dependencies": {
     "jimp": "0.2.x",
