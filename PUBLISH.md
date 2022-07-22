@@ -7,7 +7,6 @@ git push --tags
 
 git checkout v{version} 
 
-npm login --scope=@senzil
 
 npm publish --access public
 
