@@ -38,7 +38,7 @@ function Screenshot() {
     for (var index in args) {
       switch (typeof args[index]) {
       case 'string':
-        // config.options.output = path.normalize(args[index])
+        config.options.output = args[index]
         break
       case 'function':
         config.callback = args[index]
