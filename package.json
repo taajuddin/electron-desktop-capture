@@ -1,6 +1,6 @@
 {
   "name": "electron-desktop-screenshot",
-  "version": "1.0.3-release.2",
+  "version": "1.0.4-release.3",
   "description": "Cross-platform screenshot module, using external tools",
   "license": "MIT",
   "author": {},
