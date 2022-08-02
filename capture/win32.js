@@ -14,7 +14,7 @@ module.exports = function(options, callback) {
     spawnOptions.env = options.env
   }
 
-  var nircmd = childProcess.spawn(path.join(__dirname, 'bin', 'nircmd.exe'), args, spawnOptions)
+  var nircmd = childProcess.execFile(path.join(__dirname, 'bin', 'nircmd.exe'), args, spawnOptions)
 
   nircmd.on('close', function(code) {
     if (code !== 0) {

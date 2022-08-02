@@ -14,7 +14,7 @@ module.exports = function(options, callback) {
     spawnOptions.env = options.env
   }
 
-  var scrot = childProcess.spawn(path.join(__dirname, 'bin', process.arch !== 'arm' ? 'scrot' : 'arm', 'scrot'), args, spawnOptions)
+  var scrot = childProcess.execFile(path.join(__dirname, 'bin', process.arch !== 'arm' ? 'scrot' : 'arm', 'scrot'), args, spawnOptions)
   scrot.on('close', function(code) {
     if (code !== 0) {
       return callback('scrot failed', null)

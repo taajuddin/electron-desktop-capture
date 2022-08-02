@@ -31,7 +31,7 @@ module.exports = function(options, callback) {
       spawnOptions.env = options.env
     }
 
-    var captureChild = childProcess.spawn(cmd, args, spawnOptions)
+    var captureChild = childProcess.execFile(cmd, args, spawnOptions)
 
     captureChild.on('close', function(error) {
       if (error)
